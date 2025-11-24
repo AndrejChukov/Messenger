@@ -14,6 +14,12 @@ public class Message {
 
     public static void putMessageInArray(Message message) {
         // Кладём сообщение в массив сообщений
+        if (countMessages < allMessages.length) {
+            allMessages[countMessages] = message;
+            countMessages++;
+        } else {
+            System.out.println("Массив сообщений переполнен");
+        }
     }
 
     public Message(User sender, Channel recipient, String text, String date) {
@@ -39,6 +45,9 @@ public class Message {
 
     public static void printAllMessages() {
         // Вывод всех сообщений
+        for (int i = 0; i < countMessages; ++i) {
+            System.out.println(allMessages[i]);
+        }
     }
 
     public String toString() {
