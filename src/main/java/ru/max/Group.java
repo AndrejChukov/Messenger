@@ -16,7 +16,7 @@ public class Group {
     }
 
     public void sendMessageInGroup(Message message) {
-        // Вызываем putMessageInArray()
+        // Вызываем Message.putMessageInArray()
     }
 
     public String toString() {

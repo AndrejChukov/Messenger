@@ -12,7 +12,7 @@ public class Message {
     private static Message[] allMessages = new Message[100];
     private static int countMessages = 0;
 
-    public void putMessageInArray(Message message) {
+    public static void putMessageInArray(Message message) {
         // Кладём сообщение в массив сообщений
     }
 

@@ -18,7 +18,7 @@ public class Channel {
     }
 
     public void sendMessageInChannel(Message message) {
-        // Вызываем putMessageInArray()
+        // Вызываем Message.putMessageInArray()
     }
 
     public String toString() {
