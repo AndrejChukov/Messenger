@@ -4,7 +4,6 @@ public class User {
     private String name;
     private String nickName;
     private String password;
-    private static String[] messages;
 
     public User(String name, String nickName, String password) {
         this.name = name;
@@ -12,13 +11,8 @@ public class User {
         this.password = password;
     }
 
-    public void sendMessage(String text, User recipient) {
-        // Логика отправки сообщения другому пользователю
-        // Создание экземпляра класса Message
-    }
-
-    public static String[] getMessages() {
-        return messages;
+    public void sendMessage(Message message) {
+        // Вызываем putMessageInArray(). Т.е. кладём сообщение в массив сообщений
     }
 
 }
