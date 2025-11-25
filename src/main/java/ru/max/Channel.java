@@ -37,7 +37,7 @@ public class Channel {
 
     public void sendMessageInChannel(Message message) {
         // Вызываем Message.putMessageInArray()
-        if (message.getSender().getName().equals(owner.getName()))
+        if (message.getSender().equals(owner))
             Message.putMessageInArray(message);
     }
 
