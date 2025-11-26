@@ -1,14 +1,18 @@
 package ru.max;
-
+import java.util.Arrays;
 public class User {
     private String name;
     private String nickName;
     private String password;
+    private static User[] users = new User[100];
+    private static int countUsers = 0;
 
     public User(String name, String nickName, String password) {
         this.name = name;
         this.nickName = nickName;
         this.password = password;
+        users[countUsers] = this;
+        countUsers++;
     }
 
     public String getName() {
@@ -37,5 +41,8 @@ public class User {
 
     public void sendMessage(Message message) {
         // Вызываем putMessageInArray(). Т.е. кладём сообщение в массив сообщений
+    }
+    public String toString() {
+        return "";
     }
 }
