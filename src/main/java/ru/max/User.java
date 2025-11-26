@@ -15,6 +15,10 @@ public class User {
         countUsers++;
     }
 
+    public static User[] getUsers() {
+        return Arrays.copyOfRange(users, 0, countUsers);
+    }
+
     public String getName() {
         return name;
     }
