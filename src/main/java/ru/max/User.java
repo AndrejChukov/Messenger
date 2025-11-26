@@ -43,6 +43,6 @@ public class User {
         // Вызываем putMessageInArray(). Т.е. кладём сообщение в массив сообщений
     }
     public String toString() {
-        return "";
+        return "Имя: " + name + ", Иия пользователя: " + nickName;
     }
 }
