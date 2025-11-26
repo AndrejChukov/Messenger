@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Channel {
     private String name;
-    private User[] users;
+    private User[] users = new User[100];
     private User owner;
     private int countUsers = 0;
 

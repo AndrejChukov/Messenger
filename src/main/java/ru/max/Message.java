@@ -50,6 +50,10 @@ public class Message {
         }
     }
 
+    public User getSender() {
+        return sender;
+    }
+
     public String toString() {
         // переопределение метода toString()
         if (userRecipient != null) {

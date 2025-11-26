@@ -19,5 +19,7 @@ public class Main {
         someChannel.sendMessageInChannel(new Message(margarite, someChannel, "This channel is mine!", "21:54 24.11.2025"));
 
         Message.printAllMessages();
+        System.out.println();
+        System.out.println(Arrays.toString(User.getUsers()));
     }
 }
