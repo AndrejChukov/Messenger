@@ -57,18 +57,18 @@ public class Message {
     public String toString() {
         // переопределение метода toString()
         if (userRecipient != null) {
-            return "Отправитель: " + sender.getName() + " получатель: " + userRecipient.getName()
-                    + " Сообщение: " + text + " Дата: " + date;
+            return "Отправитель: " + sender.getName() + ", получатель: " + userRecipient.getName()
+                    + ", Сообщение: " + text + ", Дата: " + date;
         }
 
         else if (channelRecipient != null) {
-            return "Отправитель: " + sender.getName() + " получатель: " + channelRecipient.getName()
-                    + " Сообщение: " + text + " Дата: " + date;
+            return "Отправитель: " + sender.getName() + ", получатель: " + channelRecipient.getName()
+                    + ", Сообщение: " + text + ", Дата: " + date;
         }
 
         else {
-            return "Отправитель: " + sender.getName() + " получатель: " + groupRecipient.getName()
-                    + " Сообщение: " + text + " Дата: " + date;
+            return "Отправитель: " + sender.getName() + ", получатель: " + groupRecipient.getName()
+                    + ", Сообщение: " + text + ", Дата: " + date;
         }
     }
 }
