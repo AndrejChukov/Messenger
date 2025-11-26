@@ -45,6 +45,7 @@ public class User {
 
     public void sendMessage(Message message) {
         // Вызываем putMessageInArray(). Т.е. кладём сообщение в массив сообщений
+        Message.putMessageInArray(message);
     }
     public String toString() {
         return "Имя: " + name + ", Иия пользователя: " + nickName;
